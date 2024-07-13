@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* Persona Start*/
+.persona {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold
+}
+.persona:hover {
+  cursor: pointer;
+}
+/* End of persona */
+/* Nav bar */
+nav {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+nav ul li{
+ font-size: 1.1rem;
+ font-weight: bold;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 25px;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+/* Nav bar end */
+
+/* sub=Hero section  */
+#sub-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* End of Sub=Hero section */
+
+/* About section */
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px 130px;
+  margin-bottom: 50px;
+  background-color: skyblue;
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+#pic {
+  display: flex;
+  padding: 20px;
+}
+#pic img {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.intro {
+  margin-top: 50px;
+  width: 700px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/* End of About section */
+/* Skills section */
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color:  skyblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.box:hover {
+  background-color: rgb(95, 174, 206);
+  color: white;
+  border: none;
+  transition: 0.25s;
+}
+.box img {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  padding: 10px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: skyblue;
+}
+.icon:hover {
+ background-color: black;
+}
+/* End of skills section */
+/* CV section */
+#cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#cv p {
+  font-size: 1.5rem;
+}
+#cv button{
+  background-color: black;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#cv button:hover {
+  background-color: rgb(95, 174, 206);
+  transition: 0.25s;
+}
+#cv button a {
+  color: white;
+  text-decoration: none;
+}
+/* End of CV section */
+/* Contact section */
+#contact {
+  background-color: skyblue;
+  margin-top: 60px;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contact h3 {
+  width: 400px;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+#contact form label {
+  font-size: 18px;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 10px 12px;
+  border: orange;
+  border-radius: 4px;
+}
+
+#contact button {
+  background-color: black;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: rgb(95, 174, 206);
+  transition: 0.25s;
+}
+
+.social {
+  display: flex;
+  gap: 60px;
+}
+
+/* large devices ( desktops, less than 1200px) */
+@media (max-width: 1200px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    background-color: skyblue;
+  }
+}
+
+@media (max-width: 992px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    background-color: skyblue;
+  }
+  
+  .intro {
+    margin-top: 0;
+    width: 800px;
+}
+
+#cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0px 20px;
+}
+
+#cv p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+}
+
+/* Small devices (Landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  #pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #pic img {
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+  .intro {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .intro h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* X-small devices, less than 576px */
+@media (max-width: 576px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 20px 0px;
+  }
+  
+  nav ul li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    padding: 8px 25px;
+  }
+  
+  #pic {
+    padding: 4px;
+  }
+
+  #pic img {
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+  }
+  
+  #about {
+    margin-bottom: 10px;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: justify;
+    padding: 20px 10px;
+  }
+
+  #contact h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact {
+    padding: 30px 20px;
+  }
+}
